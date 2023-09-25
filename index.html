@@ -18,10 +18,22 @@
     </header>
 
     <main class="container">
-      <input type="file" name="picture" />
-      <button id="new" class="btn">New Picture</button>
-      <canvas id="preview" style="display: none;"></canvas>
-      <pre id="ascii"></pre>
+      <div class="btn-container">
+        <input type="file" name="picture" class="" />        
+        <button
+          type="button"
+          class="btn"
+          onClick="window.location.reload()"
+        >
+          <span>New Picture</span>
+        </button>
+      </div>
+      <canvas id="preview" style="display: none"></canvas>
+      <pre id="ascii">
+        <div class="img-container">
+          <img src="./ascii-pic.PNG" alt="ascii-img">
+        </div>
+      </pre>
     </main>
 
     <script src="./sketch.js"></script>
