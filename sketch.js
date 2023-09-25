@@ -85,7 +85,7 @@ fileInput.onchange = (e) => {
     reader.readAsDataURL(file);
 };
 
-const grayRamp = 'Ñ@#W$9876543210?!abc;:+=-,._ ';
+const grayRamp = 'Ñ@#W$9876543210?!abc;:+=-,.* ';
 const rampLength = grayRamp.length;
 
 const getCharacterForGrayScale = grayScale => grayRamp[Math.ceil((rampLength - 1) * grayScale / 255)];
