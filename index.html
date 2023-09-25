@@ -1,12 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <script src="p5.js"></script>
-    <script src="p5.sound.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="style.css" />
-    <meta charset="utf-8" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Ascii Art Converter</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=VT323"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <script src="sketch.js"></script>
+    <header class="header">
+      <h1>Ascii Art Converter</h1>
+      <span>Upload a picture and turn it into pure ASCII masterpiece!</span>
+    </header>
+
+    <main class="container">
+      <input type="file" name="picture" />
+      <button id="new" class="btn">New Picture</button>
+      <canvas id="preview" style="display: none;"></canvas>
+      <pre id="ascii"></pre>
+    </main>
+
+    <script src="./sketch.js"></script>
   </body>
 </html>
